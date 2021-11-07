@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: sans-serif;
+  color: white;
+}
+
+.timezone-wrapper,
+.temp-wrapper {
+  height: 20vh;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temp-wrapper {
+  flex-direction: column;
+}
+
+.temp-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.temp-section span {
+  margin: 0.3rem;
+  font-size: 1rem;
+}
