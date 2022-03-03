@@ -32,6 +32,7 @@ body {
   width: 100%;
   padding: 0.8rem;
   text-align: center;
+  color: rgb(47, 150, 163);
 }
 
 .inner-wrapper {
@@ -51,9 +52,12 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  width: fit-content;
+  padding: 0.8rem;
+  height: 150px;
+  width: 150px;
+  border: 2px solid lightblue;
+  border-radius: 50%;
 }
-
 
 .temperature {
   font-size: 5rem;
@@ -64,8 +68,13 @@ body {
 }
 
 .description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: fit-content;
+}
+
+.location-wrapper {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .location {
@@ -74,19 +83,25 @@ body {
   font: 2px var(--roboto);
 }
 
+.location-pin {
+  width: 20px;
+  height: 25px;
+  align-self: center;
+}
+
 
 .bottom-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem;
-  border-top: 2px lightblue;
+  border-top: 2px solid lightblue;
 }
 
 
 .wind-text-wrap {
   display: flex;
   flex-direction: column;
+  margin-right: 0.8rem;
 }
 
 .wind-speed-wrap, 
@@ -94,10 +109,23 @@ body {
   display: flex;
   flex-direction: row;
   gap: 0.1rem;
+  justify-content: center; 
 }
 
 .wind-icon {
   width: 3.5rem;
+}
+
+.bottom-inner-wrap-1 {
+  border-right: 1px solid lightblue;
+  width: 50%;
+  padding:0.5rem;
+}
+
+.bottom-inner-wrap-2 {
+  border-left: 1px solid lightblue;
+  width: 50%;
+  padding:0.5rem;
 }
 
 .mph {
@@ -112,5 +140,12 @@ body {
 .humidity {
   display: flex;
   align-items: center;
+}
+
+a {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: white;
+  font-style: italic;
 }
 

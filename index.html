@@ -12,8 +12,9 @@
   </head>
   <body>
 
-    <div class="card-wrapper">
+    <section class="card-wrapper">
         <h3 class="app-header">Weather App</h3>
+
           <div class="inner-wrapper">
             <img class = "main-icon" src=""></img>
             <div class="temp-section">
@@ -21,27 +22,34 @@
               <div class="span-align"><span class="celsius">C</span></div>
             </div>
             <div class="description"></div>
-            <p class="location"></p>
+            <div class="location-wrapper">
+              <img class="location-pin" src="pin.png">
+              <p class="location"></p>
+            </div>
           </div>
-        
-    
-      <div class="bottom-wrapper">
-        <div class="humidity-wrap">
-          <div class="humidity"></div>
-          <img class="humidity-icon" src="humidity-2.png">
-        </div>
-        <div class="wind-speed-wrap">
-          <img class="wind-icon" src="wind.png">
-          <div class="wind-text-wrap">
-            <div class="wind-speed"></div>
-            <p class="mph">MPH</p>
-          </div>
-        </div>
-       
-        
-      </div>
 
-    </div>
+      <div class="bottom-wrapper">
+
+        <div class="bottom-inner-wrap-1">
+          <div class="humidity-wrap">
+            <div class="humidity"></div>
+            <img class="humidity-icon" src="humidity.png">
+          </div>
+        </div>
+
+        <div class="bottom-inner-wrap-2">
+          <div class="wind-speed-wrap">
+            <div class="wind-text-wrap">
+              <div class="wind-speed"></div>
+              <p class="mph">MPH</p>
+            </div>
+            <img class="wind-icon" src="wind.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a>
 
     <script src="script.js"></script>
   </body>
