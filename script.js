@@ -2,13 +2,15 @@ window.addEventListener("load", () => {
   //GLOBAL ELEMENTS
   let long;
   let lat;
-  let timezone = document.querySelector(`.timezone`);
-  let icon = document.querySelector(`.icon`);
+  let timezone = document.querySelector(`.location`);
+  let icon = document.querySelector(`.main-icon`);
   let temp = document.querySelector(`.temperature`);
   let text = document.querySelector(`.description`);
   const tempSection = document.querySelector(`.temp-section`);
   let tempSpan = document.querySelector(`.temp-section span`);
-  console.log(tempSpan);
+  let windSpeed = document.querySelector(`.wind-speed`);
+  let humidity = document.querySelector(`.humidity`);
+
 
   //RETRIEVE LOCATION
   if (navigator.geolocation) {
@@ -23,10 +25,12 @@ window.addEventListener("load", () => {
           console.log(data);
 
           //UPDATE DOM ELEMENTS
-          timezone.textContent = data.location.tz_id;
+          timezone.textContent = data.location.region;
           temp.textContent = data.current.temp_c;
           text.textContent = data.current.condition.text;
           icon.src = data.current.condition.icon;
+          windSpeed.textContent = data.current.wind_mph;
+          humidity.textContent = data.current.humidity;
 
           //CHANGE TEMP UNITS
           tempSection.addEventListener("click", () => {

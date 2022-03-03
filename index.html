@@ -5,22 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Weather App</title>
   </head>
   <body>
 
-    <div class="timezone-wrapper">
-      <h1 class="timezone"></h1>
-      <img class = "icon" src=""></img>
-    </div>
-
-    <div class="temp-wrapper">
-      <div class="temp-section">
-        <h2 class="temperature">34</h2>
-        <span>C</span>
+    <div class="card-wrapper">
+        <h3 class="app-header">Weather App</h3>
+          <div class="inner-wrapper">
+            <img class = "main-icon" src=""></img>
+            <div class="temp-section">
+                <h2 class="temperature"></h2>
+              <div class="span-align"><span class="celsius">C</span></div>
+            </div>
+            <div class="description"></div>
+            <p class="location"></p>
+          </div>
+        
+    
+      <div class="bottom-wrapper">
+        <div class="humidity-wrap">
+          <div class="humidity"></div>
+          <img class="humidity-icon" src="humidity-2.png">
+        </div>
+        <div class="wind-speed-wrap">
+          <img class="wind-icon" src="wind.png">
+          <div class="wind-text-wrap">
+            <div class="wind-speed"></div>
+            <p class="mph">MPH</p>
+          </div>
+        </div>
+       
+        
       </div>
 
-      <div class="description"></div>
     </div>
 
     <script src="script.js"></script>

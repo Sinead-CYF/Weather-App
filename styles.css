@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+:root {
+  --Bebas-Neue: font-family: 'Bebas Neue', cursive;
+  --roboto: font-family: 'Roboto', sans-serif;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -12,29 +17,100 @@ body {
   align-items: center;
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
   font-family: sans-serif;
-  color: white;
 }
 
-.timezone-wrapper,
-.temp-wrapper {
-  height: 20vh;
-  width: 25%;
+.card-wrapper {
+  background-image: linear-gradient(white, #EBEDEE);
+  color: black;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-family: var(--roboto);
+}
+
+.app-header {
+  border-bottom: 2px solid lightblue;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.inner-wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
+  align-content: center;
+  padding: 1rem 4rem 1rem 4rem;
 }
 
-.temp-wrapper {
-  flex-direction: column;
+.main-icon {
+  width: 6.5rem;
 }
 
 .temp-section {
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: fit-content;
+}
+
+
+.temperature {
+  font-size: 5rem;
 }
 
 .temp-section span {
-  margin: 0.3rem;
-  font-size: 1rem;
+  font-size: 3rem;
 }
+
+.description {
+  font-size: 2rem;
+  width: fit-content;
+}
+
+.location {
+  font-size: 2rem;
+  width: fit-content;
+  font: 2px var(--roboto);
+}
+
+
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  border-top: 2px lightblue;
+}
+
+
+.wind-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.wind-speed-wrap, 
+.humidity-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+}
+
+.wind-icon {
+  width: 3.5rem;
+}
+
+.mph {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.humidity-icon {
+  width: 3.5rem;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+}
+
