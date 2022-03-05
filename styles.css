@@ -28,11 +28,12 @@ body {
 }
 
 .app-header {
-  border-bottom: 2px solid lightblue;
   width: 100%;
   padding: 0.8rem;
   text-align: center;
-  color: rgb(47, 150, 163);
+  color: whitesmoke;
+  border-radius: 10px 10px 0px 0px;
+  background: linear-gradient(#3494E6, #004e92);
 }
 
 .inner-wrapper {
@@ -52,9 +53,10 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0.8rem;
-  border: 2px solid lightblue;
+  color: whitesmoke;
+  padding: 0.2rem 0.5rem 0rem 0.5rem;
   border-radius: 10px;
+  background: linear-gradient(#3494E6, #004e92);
 }
 
 .temperature {
@@ -82,7 +84,7 @@ body {
 }
 
 .location-pin {
-  width: 20px;
+  width: 25px;
   height: 25px;
   align-self: center;
 }
@@ -132,7 +134,7 @@ body {
 }
 
 .humidity-icon {
-  width: 3.5rem;
+  width: 3rem;
 }
 
 .humidity {
