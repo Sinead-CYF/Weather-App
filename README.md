@@ -21,3 +21,4 @@ Create a vanilla JS weather app whilst fetching data from an external API and cr
 - Create React App 
 - Use React Hooks
 - Create more components
+- Sass
